@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
+import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 
 //components
 import { AppComponent } from "./app.component";
@@ -19,23 +20,36 @@ import { ButtonsModule } from "ngx-bootstrap/buttons";
 
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
+import { MatCardModule } from "@angular/material/card";
+import { HomePageComponent } from './home-page/home-page.component';
+import { CatalogPageComponent } from './catalog-page/catalog-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    MainLayoutComponent
+    MainLayoutComponent,
+    HomePageComponent,
+    CatalogPageComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    CollapseModule,
-    ButtonsModule,
 
+    //material design
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule,
+
+    //forms
+    ReactiveFormsModule,
+    FormsModule,
+
+    //ngx-bootstrap
+    CollapseModule.forRoot(),
+    ButtonsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],

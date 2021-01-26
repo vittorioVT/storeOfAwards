@@ -1,5 +1,35 @@
 <div class="container-fluid">
- 
+  <div class="row navbar navbar-dark navbar-expand-lg header">
+    <span class="navbar-brand d-lg-none" id="mainlink">НA ГОЛОВНУ</span>
+
+    <button class="navbar-toggler navbar-toggler-right" type="button"
+            id="nav-main" (click)="isCollapsed1 = !isCollapsed1"
+            [attr.aria-expanded]="!isCollapsed1" aria-controls="collapseBasic1">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse navbar-nav" id="collapseBasic1" [collapse]="isCollapsed1">
+
+      <div class="nav-item col-lg-2">
+        <button class="nav-link d-lg-block myClass" mat-button>ГОЛОВНА</button>
+      </div>
+
+      <div class="nav-item col-lg-1">
+        <button class="nav-link" mat-button color="accent">КАТАЛОГ</button>
+      </div>
+
+      <div class="nav-item col-lg-2">
+        <button class="nav-link" mat-button>ДОСТАВКА І ОПЛАТА</button>
+      </div>
+
+      <div class="nav-item col-xs-2 col-sm-2 col-md-3 col-lg-2">
+        <button class="nav-link" mat-button>КОНТАКТИ</button>
+      </div>
+
+      <div class="col-xs-1 col-sm-1 col-lg-1"></div>
+
+    </div>
+  </div> 
 </div>
 
 <div class="container-fluid">
