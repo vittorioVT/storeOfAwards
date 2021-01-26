@@ -1,14 +1,22 @@
 import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
-import { BootstrapModule } from "./bootstrap.module";
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
+
+//components
 import { AppComponent } from "./app.component";
 import { FooterComponent } from "./shared/components/footer/footer.component";
 import { HeaderComponent } from "./shared/components/header/header.component";
 import { MainLayoutComponent } from "./shared/components/main-layout/main-layout.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
+//services
+
+//ngx-bootstrap
+import { CollapseModule } from "ngx-bootstrap/collapse";
+import { ButtonsModule } from "ngx-bootstrap/buttons";
 
 //material design
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatButtonModule } from "@angular/material/button";
 
@@ -23,11 +31,14 @@ import { MatButtonModule } from "@angular/material/button";
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    BootstrapModule,
+    CollapseModule,
+    ButtonsModule,
+
     MatButtonModule,
     MatToolbarModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule {}

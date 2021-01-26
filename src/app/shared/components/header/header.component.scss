@@ -1,4 +1,5 @@
 .row-hed-1 {
+  margin-top: 50px;
   margin-right: -30px;
   margin-left: -30px;
 }
@@ -11,7 +12,6 @@
   background-color: #808080;
 }
 .header {
-  /*background-color: rgb(140, 178, 102);*/
   margin-bottom: 3px;
 }
 
@@ -21,16 +21,8 @@
   font-weight: bold;
 }
 
-
-/*.header button {
-      text-shadow: 5px 5px 5px #111;
-    }*/
-/*.header button :hover, :visited, :active {
-      background-color: rgb(140, 178, 102);
-    }*/
-
 .header2 {
-  background-color: rgb(105, 133, 76);
+  background-color: #e4d0c9;
   text-align: center;
   padding-top: 10px;
   margin-top: 3px;
@@ -40,17 +32,15 @@
 .header2 button {
   font-family: 'Roboto';
   font-size: 18px;
-  /*font-weight: bold;*/
-  color: white;
+  color: #808080;
+  font-weight: bold;
 }
 
 .shapca {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: center;
-  
 }
 
 
@@ -64,19 +54,6 @@
   display: inline-block;
   text-align: justify;
   vertical-align: top;
-}
-
-.image {
-  border: 0px solid red;
-}
-
-.navigator {
-  border: 0px solid red;
-}
-
-.shadow {
-  /*box-shadow: 5px 5px 14px 1px #e5e5e5,
-              2px 2px 3px 0px #000;*/
 }
 
 #nav-main {
