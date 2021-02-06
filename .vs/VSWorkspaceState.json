@@ -3,12 +3,14 @@
     "",
     "\\src",
     "\\src\\app",
+    "\\src\\app\\home-page",
     "\\src\\app\\shared",
     "\\src\\app\\shared\\components",
+    "\\src\\app\\shared\\components\\footer",
     "\\src\\app\\shared\\components\\header",
     "\\src\\app\\shared\\components\\main-layout",
-    "\\src\\assets\\img"
+    "\\src\\app\\shared\\interfaces"
   ],
-  "SelectedNode": "\\src\\assets",
+  "SelectedNode": "\\src\\app\\shared\\components\\footer\\footer.component.ts",
   "PreviewInSolutionExplorer": false
 }

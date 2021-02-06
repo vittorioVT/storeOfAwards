@@ -1,0 +1,37 @@
+.mat-card {
+  width: 250px;
+  height: 250px;
+  margin: 10px 10px 10px 30px;
+  display: inline-block;
+  text-align: justify;
+  vertical-align: top;
+  box-shadow: 1px 1px 6px 1px #cec101;
+  border-radius: 8px;
+  color: #a49901;
+}
+
+.images {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.title{
+  font-family: 'Roboto';
+  font-size: 14px;
+
+}
+
+.container-fluid {
+  background-color: #fefacb;
+}
+.sidebar {
+  margin-top: 5px;
+  box-shadow: 1px 1px 6px 1px #cec101;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.button {
+  color: #a49901;
+}

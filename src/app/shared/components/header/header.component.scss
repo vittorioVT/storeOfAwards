@@ -20,10 +20,29 @@
   font-family: 'Roboto';
   font-size: 16px;
   font-weight: bold;
+  box-shadow: 1px 1px 6px 1px #cec101;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #a49901;
+}
+
+.header .button {
+  display: inline-block;
+  color: #a49901;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: bold;
+  /*box-shadow: 1px 1px 6px 1px #cec101;
+  border-radius: 4px;
+  background-color: #fff;*/
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0px 5px 0px 5px;
 }
 
 .header2 {
-  background-color: #e4d0c9;
+  background-color: #fefacb;         
   text-align: center;
   padding-top: 10px;
   margin-top: 3px;
@@ -32,9 +51,12 @@
 
 .header2 button {
   font-family: 'Roboto';
-  font-size: 18px;
-  color: #808080;
+  font-size: 16px;
   font-weight: bold;
+  box-shadow: 1px 1px 6px 1px #cec101;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #a49901;
 }
 
 .shapca {
@@ -42,6 +64,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
+  
 }
 
 
@@ -66,3 +89,4 @@
   cursor: pointer;
   font-weight: bold;
 }
+

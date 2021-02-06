@@ -1,1 +1,55 @@
-<p>home-page works!</p>
+<div class="container-fluid">
+
+
+  <div class="row">
+    <div class="col-2 sidebar">
+      Вибрати товар
+      <div>Відфільтрувати за статтю</div>
+      <div>Відфільтрувати за уладом</div>
+      <div>Відфільтрувати за типом</div>
+      <div></div>
+    </div>
+    <div class="col-10">
+      <div id="wrapper">
+        <mat-card *ngFor="let items of datasource">
+          <mat-card-header>
+            <mat-card-title class="title">{{items.Name}}</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image class="images" src="http://localhost:13764/Img/awards/{{items.Picture}}" alt="" />
+          <!--<mat-card-subtitle>Подзаголовок товара</mat-card-subtitle>-->
+          <mat-card-content>
+            <span class="color">{{items.Ulad}}</span>&nbsp;
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button mat-raised-button class="button">Купити</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+
+    </div>
+    
+
+  <!--<div class="row">
+    <div class="col-3 f">
+      Вибрати товар
+    </div>
+    <div class="col-9 pr">
+      <div id="wrapper">
+        <mat-card *ngFor="let items of datasource">
+          <mat-card-header>
+            <mat-card-title></mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="" alt="" />
+          <mat-card-subtitle>Подзаголовок товара</mat-card-subtitle>
+          <mat-card-content>
+            <span class="color">Какой-то цвет</span>&nbsp;
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button mat-raised-button class="button">Купити</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+  </div>-->
+</div>

@@ -1,8 +1,8 @@
 <div class="container-fluid">
   <div class="row navbar navbar-dark navbar-expand-lg header">
-    <span class="navbar-brand d-lg-none" id="mainlink">НA ГОЛОВНУ</span>
+    <span class="navbar-brand d-lg-none button" id="mainlink">НA ГОЛОВНУ</span>
 
-    <button class="navbar-toggler navbar-toggler-right" type="button"
+    <button class="navbar-toggler navbar-toggler-left" type="button"
             id="nav-main" (click)="isCollapsed1 = !isCollapsed1"
             [attr.aria-expanded]="!isCollapsed1" aria-controls="collapseBasic1">
       <span class="navbar-toggler-icon"></span>
@@ -10,20 +10,20 @@
 
     <div class="collapse navbar-collapse navbar-nav" id="collapseBasic1" [collapse]="isCollapsed1">
 
-      <div class="nav-item col-lg-2">
-        <button class="nav-link d-lg-block myClass" mat-button>ГОЛОВНА</button>
-      </div>
-
-      <div class="nav-item col-lg-1">
-        <button class="nav-link" mat-button color="accent">КАТАЛОГ</button>
+      <div class="nav-item col-lg-3">
+        <div class="nav-link d-lg-block button">ГОЛОВНА</div>
       </div>
 
       <div class="nav-item col-lg-2">
-        <button class="nav-link" mat-button>ДОСТАВКА І ОПЛАТА</button>
+        <div class="nav-link button">КАТАЛОГ</div>
       </div>
 
-      <div class="nav-item col-xs-2 col-sm-2 col-md-3 col-lg-2">
-        <button class="nav-link" mat-button>КОНТАКТИ</button>
+      <div class="nav-item col-lg-3">
+        <div class="nav-link button">ДОСТАВКА I ОПЛАТА</div>
+      </div>
+
+      <div class="nav-item col-xs-2 col-sm-2 col-md-3 col-lg-3">
+        <div class="nav-link button"> КОНТАКТИ</div>
       </div>
 
       <div class="col-xs-1 col-sm-1 col-lg-1"></div>
@@ -46,16 +46,16 @@
       <div class="collapse navbar-collapse navbar-nav" id="collapseBasic1" [collapse]="isCollapsed1">
 
         <div class="nav-item col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="nav-link" mat-button>УПН</button>
+          <button class="nav-link" mat-button>У П Н</button>
         </div>
         <div class="nav-item col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="nav-link" mat-button>УПЮ</button>
+          <button class="nav-link" mat-button>У П Ю</button>
         </div>
         <div class="nav-item col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="nav-link" mat-button>УСП</button>
+          <button class="nav-link" mat-button>У С П</button>
         </div>
         <div class="nav-item col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="nav-link" mat-button>УПС</button>
+          <button class="nav-link" mat-button>У П С</button>
         </div>
 
       </div>
