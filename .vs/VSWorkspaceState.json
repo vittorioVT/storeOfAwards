@@ -5,12 +5,10 @@
     "\\src\\app",
     "\\src\\app\\home-page",
     "\\src\\app\\shared",
-    "\\src\\app\\shared\\components",
-    "\\src\\app\\shared\\components\\footer",
-    "\\src\\app\\shared\\components\\header",
     "\\src\\app\\shared\\components\\main-layout",
-    "\\src\\app\\shared\\interfaces"
+    "\\src\\app\\shared\\interfaces",
+    "\\src\\app\\shared\\pipes"
   ],
-  "SelectedNode": "\\src\\app\\home-page\\home-page.component.scss",
+  "SelectedNode": "\\src\\app\\shared\\pipes\\search.pipe.ts",
   "PreviewInSolutionExplorer": false
 }

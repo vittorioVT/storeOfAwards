@@ -2,21 +2,51 @@
 
 
   <div class="row">
-    <div class="col-2 sidebar">
-      Вибрати товар
-      <div>Відфільтрувати за статтю</div>
-      <div>Відфільтрувати за уладом</div>
-      <div>Відфільтрувати за типом</div>
-      <div></div>
+    <div class="col-2">
+      <mat-form-field class="search">
+        <input type="text" matInput [(ngModel)]="searchStr" placeholder="Пошук за назвою..." />
+      </mat-form-field>
     </div>
-    <div class="col-10">
+  </div>
+
+  <div class="row">
+    <div class="col-2 col-sm-2 col-xs-9">
+      <div class="sidebar">
+        <span class="titleSidebar">Вибрати товар</span>
+        <mat-divider></mat-divider>
+        <div class="filtr">
+          <span class="titleFilter">За статтю</span><br />
+          <mat-checkbox [checked] ="myModel" color="primary">дівчата</mat-checkbox><br />
+          <mat-checkbox [checked] ="myModel" color="primary">хлопці</mat-checkbox><br />
+        </div>
+        <div class="filtr">
+          <span class="titleFilter">За уладом</span><br />
+          <mat-checkbox [(ngModel)]="myModel" color="primary">упн</mat-checkbox><br />
+          <mat-checkbox [(ngModel)]="myModel" color="primary">упю</mat-checkbox><br />
+          <mat-checkbox [(ngModel)]="myModel" color="primary">усп</mat-checkbox><br />
+          <mat-checkbox [(ngModel)]="myModel" color="primary">упс</mat-checkbox><br />
+        </div>
+        <div class="filtr">
+          <span class="titleFilter">За типом</span><br />
+          <mat-checkbox color="primary">проби</mat-checkbox><br />
+          <mat-checkbox color="primary">вмілості</mat-checkbox><br />
+          <mat-checkbox color="primary">діловодства</mat-checkbox><br />
+          <mat-checkbox color="primary">загальне</mat-checkbox><br /><br />
+        </div>
+        <button mat-raised-button color="primary">Показати</button>
+      </div>
+      <div class="sidebar">
+        Something
+      </div>
+    </div>
+    <div class="col-10 col-sm-10 col-xs-3">
       <div id="wrapper">
-        <mat-card *ngFor="let items of datasource">
+        <mat-card *ngFor="let items of datasource | searchAwards: searchStr;">
 
           <mat-card-header>
             <mat-card-title class="title">{{items.Name.slice(0, 16)}}</mat-card-title>
           </mat-card-header>
-          
+
           <!--<mat-card-subtitle>Подзаголовок товара</mat-card-subtitle>-->
           <mat-card-content>
             <span class="images"><img mat-card-image src="http://localhost:13764/Img/awards/{{items.Picture}}" alt="" /></span>
@@ -26,6 +56,7 @@
           <mat-card-actions>
 
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-binoculars-fill icon" viewBox="0 0 16 16">
+              6"
               <path d="M4.5 1A1.5 1.5 0 0 0 3 2.5V3h4v-.5A1.5 1.5 0 0 0 5.5 1h-1zM7 4v1h2V4h4v.882a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V13H9v-1.5a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5V13H1V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882V4h4zM1 14v.5A1.5 1.5 0 0 0 2.5 16h3A1.5 1.5 0 0 0 7 14.5V14H1zm8 0v.5a1.5 1.5 0 0 0 1.5 1.5h3a1.5 1.5 0 0 0 1.5-1.5V14H9zm4-11H9v-.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5V3z" />
             </svg>
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-info-circle-fill icon" viewBox="0 0 16 16">
@@ -39,29 +70,5 @@
       </div>
     </div>
 
-    </div>
-    
-
-  <!--<div class="row">
-    <div class="col-3 f">
-      Вибрати товар
-    </div>
-    <div class="col-9 pr">
-      <div id="wrapper">
-        <mat-card *ngFor="let items of datasource">
-          <mat-card-header>
-            <mat-card-title></mat-card-title>
-          </mat-card-header>
-          <img mat-card-image src="" alt="" />
-          <mat-card-subtitle>Подзаголовок товара</mat-card-subtitle>
-          <mat-card-content>
-            <span class="color">Какой-то цвет</span>&nbsp;
-          </mat-card-content>
-          <mat-card-actions>
-            <button mat-button mat-raised-button class="button">Купити</button>
-          </mat-card-actions>
-        </mat-card>
-      </div>
-    </div>
-  </div>-->
+  </div>
 </div>

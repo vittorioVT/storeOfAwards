@@ -27,6 +27,9 @@ import { MatCardModule } from "@angular/material/card";
 import { MatInputModule } from "@angular/material/input";
 import { MatSortModule } from "@angular/material/sort";
 import { MatPaginatorModule } from "@angular/material/paginator";
+import { SearchPipe } from "./shared/pipes/search.pipe";
+import { MatCheckboxModule } from "@angular/material/checkbox";
+import { MatDividerModule } from "@angular/material/divider";
 
 @NgModule({
   declarations: [
@@ -35,7 +38,8 @@ import { MatPaginatorModule } from "@angular/material/paginator";
     HeaderComponent,
     MainLayoutComponent,
     HomePageComponent,
-    CatalogPageComponent
+    CatalogPageComponent,
+    SearchPipe
   ],
   imports: [
     BrowserModule,
@@ -50,6 +54,8 @@ import { MatPaginatorModule } from "@angular/material/paginator";
     MatInputModule,
     MatSortModule,
     MatPaginatorModule,
+    MatCheckboxModule,
+    MatDividerModule,
 
     //forms
     ReactiveFormsModule,

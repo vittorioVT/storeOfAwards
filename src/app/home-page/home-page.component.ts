@@ -11,6 +11,8 @@ import { Subscription } from "rxjs";
 export class HomePageComponent implements OnInit {
   datasource: Awards[] = [];
   subscription: Subscription;
+  searchStr: string = "";
+  myModel = false;
 
   constructor(private service: AwardsService) {}
 
@@ -19,4 +21,6 @@ export class HomePageComponent implements OnInit {
       this.datasource = data;
     });
   }
+
+  ngDoCheck() {}
 }
